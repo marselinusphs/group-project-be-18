@@ -1,3 +1,18 @@
+let sesId;
+let ppp=9;
+
+
+function ceksession(){
+  if(sessionStorage.getItem("sesId")==undefined){
+  window.location="login.html";
+}
+}
+
+function logout(){
+  sessionStorage.removeItem("sesId")
+  window.location="login.html"
+}
+
 async function login() {
     let login_status = false;
     let inemail = document.getElementById("email").value;
@@ -9,12 +24,15 @@ async function login() {
     let result = await response.json();
     result.forEach((item) => {
       if (item.password == inpassword && item.email == inemail) {
+        loginId = item.id
         login_status = true;
       }
     });
   
     if (login_status) {
-        alert("Anda berhasil login");
+        sessionStorage.setItem('sesId',loginId)
+        console.log(sessionStorage.getItem('sesId'))
+       alert("Anda berhasil login");
         window.location = 'index.html';
     } else {
         alert("Email/password salah");
