@@ -1,3 +1,7 @@
+.navbar-expand-lg {
+    background-color: #ccd5ff;
+}
+
 .navbar-brand {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
