@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="favorites.css" />
+        <title>Group Project BE18</title>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #ccd5ff">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">VENNI</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="nav navbar-expand-lg">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="favorites.html">Favoritku</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav><br>
+
+        <!-- FAVORITE -->
+        <h1 class="heading">My Favorites</h1>
+        <div id="cards">
+            <!-- <div class="card" style="width: 18rem;">
+                <img class="card-image" src="${values.gambar}" alt="card-image">
+                <div class="card-body">
+                  <h5 class="card-title">${values.nama_event}</h5>
+                  <p class="card-date">tanggal</p>
+                  <p class="card-time">waktu</p>
+                  <p class="card-location">lokasi</p>
+                  <button type="button" class="btn btn-primary" onclick="removeFavorite id="btn-remove">Hapus dari favorite</a>
+                </div>
+            </div> -->
+        </div>
+        <!-- END FAVORITE -->
+
+        <script src="favorites.js"></script>
+    </body>
+</html>
