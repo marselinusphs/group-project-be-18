@@ -24,8 +24,3 @@ document.getElementById("cards").innerHTML=data1;
 }).catch((err)=>{
   console.log(err);
 })
-
-function removeFavorites() {
-  var list = document.getElementById("cards");
-  list.removeChild(list.childNodes[0]);
-}
