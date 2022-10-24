@@ -1,5 +1,5 @@
 let EVENT_URL = "https://634e44b7f34e1ed82686e4e4.mockapi.io/event";
-let FAVORITE_URL = "https://634e44b7f34e1ed82686e4e4.mockapi.io/favorite?user_id=1";
+let FAVORITE_URL = "https://634e44b7f34e1ed82686e4e4.mockapi.io/favorite";
 
 fetch('https://634e44b7f34e1ed82686e4e4.mockapi.io/event').then((data)=>{
   console.log(data);
